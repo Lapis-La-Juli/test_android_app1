@@ -4,82 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:background="@color/material_dynamic_neutral90"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Hello World!"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Hello World!"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
     <TextView
         android:id="@+id/name_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/name_text"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="#1e98b0"
         android:textAlignment="center"
-        android:textAllCaps="true"/>
+        android:textAllCaps="true"
+        android:textColor="#1e98b0"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/age"
-        android:textSize="20sp"
         android:textColor="#FFD700"
-        />
+        android:textSize="20sp" />
+
     <TextView
         android:id="@+id/proffession"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/proffession"
-        android:textIsSelectable="true"
-        android:textSize="20sp"
         android:textColor="#FFD700"
-        />
+        android:textIsSelectable="true"
+        android:textSize="20sp" />
+
     <TextView
         android:id="@+id/Address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Address"
-        android:textSize="15sp"
         android:textColor="#008000"
-        />
+        android:textSize="15sp" />
+
     <TextView
         android:id="@+id/description_head"
         android:layout_width="match_parent"
-        android:textAlignment="center"
         android:layout_height="wrap_content"
         android:text="@string/description_head"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        android:textAlignment="center"
         android:textColor="@color/black"
-        />
-    <ScrollView
-        android:layout_width="match_parent"
-        android:padding="10dp"
-        android:layout_height="match_parent">
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/description"
+        android:id="@+id/life_story"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/description"
-        android:textSize="15sp"
+        android:text="@string/life_story"
         android:textColor="@color/black"
-        />
-        </ScrollView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
-    </TextView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </ScrollView>
 
 </LinearLayout>
